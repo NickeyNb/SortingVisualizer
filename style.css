@@ -1,0 +1,129 @@
+body {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 0 20px 30px 0;
+    line-height: 1.4;
+    background-color: #333;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 3rem;
+    
+}
+.logo a img {
+    width: 50px;
+    height: 50px;
+}
+.logo h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: auto;
+    color: rgba(0, 255, 255, 0.9);
+    /* border-bottom: 2px solid aqua; */
+    text-decoration: underline;
+}
+
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+.col {
+    color: #fff;
+}
+#input{
+    display: flex;
+    /* padding: 10px; */
+    justify-content: space-around;
+}
+button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: white; */
+    padding: 0.5rem;
+    gap: 1rem;
+    color: rgba(9, 194, 194, 0.9);
+    border: 1px solid wheat;
+    border-radius: 5px;
+    background-color: black;
+
+}
+button:hover{
+    background-color: rgba(9, 194, 194, 0.767);;
+    color:black;
+    font-weight: 500;
+}
+
+
+.flex-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    transition: 2s all ease;
+}
+
+.flex-item{
+    background: rgba(0, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.719);
+    border-top: 2px solid aqua;
+    width: 10px;
+    transition: 0.1s all ease;
+}
+
+@media(max-width:1105px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #input {
+        gap: 4rem;
+    }
+    .btn {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin: 1rem;
+    }
+}
+@media(max-width:600px) {
+    
+    #input {
+        gap: 1rem;
+    }
+    .btn {
+        gap: 1rem;
+        margin: 1rem;
+    }
+}
+@media(max-width:400px) {
+    .logo {
+        display: grid;
+    }
+    .logo a {
+        text-align: center;
+    }
+    .logo h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    #input {
+        display: grid;
+        gap: 1rem;
+    }
+    .btn {
+        /* gap: 0.3rem; */
+        /* margin: 1rem; */
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+}

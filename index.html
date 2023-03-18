@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div class="logo">
+        <a href="">
+            <img src="./mainLogo.png" alt="Nb Logo">
+        </a>
+        <h1 >Sorting Visualizer</h1>
+    </div>
+    <nav>
+        <div class="row">
+            <div class="col" id="newArray">
+                <button type="button" class="btn  newArray">New Array</button>
+            </div>
+            <div class="col" id="input">
+                <span id="size">Size of Array
+                    <input id="arr_sz" type="range" min="10" max="100" step=1 value=60>
+                </span>
+                <span id="speed">Speed of Sorting
+                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                </span>
+            </div>
+            <div class="btn">
+                <button type="button" class="bubbleSort">Bubble Sort</button>
+                <button type="button" class="selectionSort">Selection Sort</button>
+                <button type="button" class="insertionSort">Insertion Sort</button>
+                <button type="button" class="quickSort">Quick Sort</button>
+                <button type="button" class="mergeSort">Merge Sort</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body class="classBody">
+
+    <div id="bars" class="flex-container"></div>
+
+    <script src="js_files/sorting.js"></script>
+    <script src="js_files/bubble.js"></script>
+    <script src="js_files/insertion.js"></script>
+    <script src="js_files/merge.js"></script>
+    <script src="js_files/quick.js"></script>
+    <script src="js_files/selection.js"></script>
+
+    <footer>
+        <!-- <p>The “Sorting Visualiser” project is basically a web development project which is used to visualize the sorting algorithms and performs the operation of algorithms step by step as the algorithms works like Bubble Sort, Selection Sort , Merge Sort etc.  We shuffle the bars in a random order that is in a unsorted order.   We perform sorting algorithms on these bars to sort these bars in a ascending order by applying the different algorithms by clicking on the buttons of these sorting algorithms. </p> -->
+        <!-- <marquee direction="left" style="color: aqua">The “Sorting Visualiser” project is basically a web development project which is used to visualize the sorting algorithms and performs the operation of algorithms step by step as the algorithms works like Bubble Sort, Selection Sort , Merge Sort etc.  We shuffle the bars in a random order that is in a unsorted order.   We perform sorting algorithms on these bars to sort these bars in a ascending order by applying the different algorithms by clicking on the buttons of these sorting algorithms.</marquee> -->
+    </footer>
+</body>
+
+</html>
