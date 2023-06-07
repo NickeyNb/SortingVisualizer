@@ -15,27 +15,39 @@
         <a href="">
             <img src="./mainLogo.png" alt="Nb Logo">
         </a>
-        <h1 >Sorting Visualizer</h1>
+        <h1>Sorting Visualizer</h1>
+        <a href="">
+            <img src="./mainLogo.png" alt="Nb Logo">
+        </a>
     </div>
     <nav>
         <div class="row">
-            <div class="col" id="newArray">
-                <button type="button" class="btn  newArray">New Array</button>
+            <div class="left">
+                <div class="col" id="newArray">
+                <button type="button" class="primary newArray">New Array</button>
             </div>
             <div class="col" id="input">
-                <span id="size">Size of Array
-                    <input id="arr_sz" type="range" min="10" max="100" step=1 value=60>
+                <span id="size"><span class="txt">Array Size</span>
+                    <div class="range-slider">
+                        <input class="range-slider__range" id="arr_sz" type="range" min="10" max="100" step=1 value=60>
+                    </div>
+                    
                 </span>
-                <span id="speed">Speed of Sorting
-                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                <span id="speed"><span class="txt">Sorting Speed</span>
+                    <div  class="range-slider">
+                    <input class="range-slider__range" id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                        
+                    </div>
                 </span>
             </div>
-            <div class="btn">
-                <button type="button" class="bubbleSort">Bubble Sort</button>
-                <button type="button" class="selectionSort">Selection Sort</button>
-                <button type="button" class="insertionSort">Insertion Sort</button>
-                <button type="button" class="quickSort">Quick Sort</button>
-                <button type="button" class="mergeSort">Merge Sort</button>
+            </div>
+            
+            <div class="btn right">
+                <button type="button" class="primary bubbleSort">Bubble Sort</button>
+                <button type="button" class="primary selectionSort">Selection Sort</button>
+                <button type="button" class="primary insertionSort">Insertion Sort</button>
+                <button type="button" class="primary quickSort">Quick Sort</button>
+                <button type="button" class="primary mergeSort">Merge Sort</button>
             </div>
         </div>
     </nav>
@@ -51,11 +63,13 @@
     <script src="js_files/merge.js"></script>
     <script src="js_files/quick.js"></script>
     <script src="js_files/selection.js"></script>
-
+    <script src="js_files/slider-color.js"></script>
+    
     <footer>
         <!-- <p>The “Sorting Visualiser” project is basically a web development project which is used to visualize the sorting algorithms and performs the operation of algorithms step by step as the algorithms works like Bubble Sort, Selection Sort , Merge Sort etc.  We shuffle the bars in a random order that is in a unsorted order.   We perform sorting algorithms on these bars to sort these bars in a ascending order by applying the different algorithms by clicking on the buttons of these sorting algorithms. </p> -->
         <!-- <marquee direction="left" style="color: aqua">The “Sorting Visualiser” project is basically a web development project which is used to visualize the sorting algorithms and performs the operation of algorithms step by step as the algorithms works like Bubble Sort, Selection Sort , Merge Sort etc.  We shuffle the bars in a random order that is in a unsorted order.   We perform sorting algorithms on these bars to sort these bars in a ascending order by applying the different algorithms by clicking on the buttons of these sorting algorithms.</marquee> -->
     </footer>
 </body>
+
 
 </html>
